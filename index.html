@@ -1,1 +1,18 @@
-
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quality Checker</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <div class="container">
+        <h1>Quality Checker</h1>
+        <input type="file" id="fileInput" accept="audio/*" onchange="analyzeFile()">
+        <div id="output"></div>
+        <h3 class="disclaimer">Disclaimer: This tool is not always accurate. A recording can be CDQ and still be terrible quality (if it is, for example, a recording of a recording).</h3>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
